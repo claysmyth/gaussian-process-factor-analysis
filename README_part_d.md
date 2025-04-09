@@ -1,9 +1,0 @@
-### D
-
-Here, we validated our implementation of Gaussian Process Factor Analysis on a sample dataset, provided by the author of the original paper.
-
-Moving forward, it would be exciting to use Gaussian Process Factor Analysis (GPFA) to analyze if the latent, low dimensional space on neural spike rasters could be used to infer behavioral or physiological state. An example of this would be to see if, by using spike count's of hippocampal CA1 neurons, latent state representation could be used to determine a rodent's location on a track. 
-
-Another interesting study would be to use GPFA on power spectral density vectors generated from cortical field potentials to assess GPFA's capabilities in identifying low-dimensional representations of oscillatory dynamics. This could be useful for implementing into brain-machine interfaces, where a low-dimensional represenation of the oscillatory dynamics may be utilized by control systems for modulating neural activity. For example, in closed-loop Deep Brain Stimulation for Parkinson's Disease, it is often useful to identify states of low gamma power and high beta power, as these states often correspond to bothersome movement symptoms. GPFA could identify latent states that correspond to bothersome symptom states from high-dimensional Power-Spectral Density vectors, and consequently, stimulation control policies for targeting movement symptoms could operate on the inferred latent states.
-
-One could also compare how model parameters (e.g. timescale initialization) affect the latent state representation of oscillatory dynamics versus neural spike raster. It's plausible that differing kernel functions would be needed for adequately representing these separate use-cases using GPFA.
